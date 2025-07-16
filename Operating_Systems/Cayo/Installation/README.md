@@ -2,10 +2,10 @@
 
 
 ## Table of Contents
-1. [Cayo Images](#images)
-2. [Installation - Anaconda](#anaconda-work-in-progress)
-3. [Installation - Podman](#podman)
-4. [Common Issues](#common-issues)
+- [Cayo Images](#images)
+- [Installation - Anaconda](#anaconda-work-in-progress)
+- [Installation - Podman](#podman)
+- [Common Issues](#common-issues)
 
 ### Images
 Cayo currently offers two primary images: one based on CentOS 10 and another on Fedora 42. The rationale for providing both images addresses hardware compatibility.
