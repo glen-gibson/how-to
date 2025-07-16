@@ -1,4 +1,4 @@
-# Cayo FAQ
+# Cayo Installation
 
 
 ## Table of Contents
