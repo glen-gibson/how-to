@@ -13,8 +13,7 @@ Wish me luck!
   - Cayo
     - [Installation](Operating_Systems/Cayo/Installation/README.md)
   - Fedora CoreOS
-    - [Installation]
-    (Operating_Systems/Fedora_CoreOS/Installation/README.md)
+    - [Installation](Operating_Systems/Fedora_CoreOS/Installation/README.md)
 
 - Infrastructure as Code
   - To be added....
