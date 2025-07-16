@@ -9,7 +9,7 @@ Wish me luck!
 
 - Operating Systems
   - Cayo
-    - [Installation](Operating_Systems\Cayo\Installation\README.md)
+    - [Installation](Operating_Systems/Cayo/Installation/README.md)
 
 - Infrastructure as Code
   - To be added....
