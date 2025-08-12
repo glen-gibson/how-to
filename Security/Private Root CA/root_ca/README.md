@@ -64,7 +64,7 @@ chmod 400 private/ca.key.pem
 
 
 ## Create the Root CA Certificate
-Create the public key using the Root Key created in the previous step.  We will set it to expire in about 20 years.  You will be prompted for the passphrase that was set during root key creation and for various attributes related to the new certificate being created:
+Create the public Root CA certificate using the Root CA Private Key created in the previous step.  We will set it to expire in about 20 years.  You will be prompted for the passphrase that was set during Root CA Private Key creation and for various attributes related to the new certificate being created:
 
 ```bash
 cd /root/ca

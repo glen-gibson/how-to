@@ -68,7 +68,7 @@ openssl req -config intermediate/openssl.cnf -new -sha256 \
 Follow the prompts.
 
 ## Create the Intermediate CA Certificate
-We'll issue and sign an Intermediate CA Certificate using the Root CA and the CSR from the previous step.  The `openssl.cnf` used in this command is the one for the Root CA, not the Intermediate.  You will be prompted for the passphrase for the Root CA's key that was set during root key creation.
+We'll issue and sign an Intermediate CA Certificate using the Root CA Private Key, and the CSR from the previous step.  The `openssl.cnf` used in this command is the one for the Root CA, not the Intermediate CA.  You will be prompted for the passphrase that was set during Root CA Private Key creation.
 
 ```bash
 cd /root/ca
