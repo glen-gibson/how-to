@@ -2,7 +2,7 @@
 This guide will include the following:
 
 - [Setting up the Root CA Key and Certificate](root_ca/README.md)
-- Setting up the Intermediate Signing Certificate
+- [Setting up the Intermediate Signing Certificate](intermediate_ca/README.md)
 - Requesting a Server Certificate
 - Processing a Certificate Service Request
 
