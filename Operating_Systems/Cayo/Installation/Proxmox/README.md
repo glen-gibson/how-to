@@ -1,4 +1,4 @@
-# Proxmox with Cloud-Init!
+# Cayo Proxmox Template with Cloud-Init!
 
 ### In this Guide:
 - [Introduction](#introduction)
@@ -51,4 +51,4 @@ reboot
 | DNS servers       | ip.of.your.dns                            |
 | SSH public key    | [pub key from .ssh]                       |
 | Upgrade packages  | No                                        |
-| IP Config (net0)  | ip=ip.of.the.machine/CIDR, gw=ip.of.gw    |
+| IP Config (net0)  | ip=ip.of.the.machine/CIDR, gw=ip.of.your.gw    |

@@ -12,6 +12,7 @@ Wish me luck!
 - Operating Systems
   - Cayo
     - [Installation](Operating_Systems/Cayo/Installation/README.md)
+    - [Cayo Proxmox Template with Cloud-Init!](Operating_Systems/Cayo/Installation/Proxmox/README.md)
   - Fedora CoreOS
     - [Installation](Operating_Systems/Fedora_CoreOS/Installation/README.md)
 
