@@ -39,7 +39,8 @@ reboot
 2.  Fill out the appropriate boxes and just to be sure, I chose "Full Clone" as the mode to make it completely independent of the template.
 3.  Edit the new cloned VM's hardware and add a `CloudInit Drive` 
 4.  Go to the new cloned VM's `Cloud-Init` section and fill out the appropriate boxes.
-5.  Boot the new cloned VM.
+5.  Boot the new cloned VM.  
+</br>
 
 ## My Cloud-Init Settings
 
