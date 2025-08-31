@@ -152,9 +152,11 @@ I have the following devices made by Token2 (I am not affiliated):
 - [PIN+ Dual Release3.2 - FIDO2.1 Key with OpenPGP and OTP and Dual USB Ports](https://www.token2.com/shop/product/pin-dual-release3-fido2-1-key-with-openpgp-and-otp-and-dual-usb-ports)
 - [T2F2-NFC-Card PIN+ Release3](https://www.token2.com/shop/product/t2f2-nfc-card-pin-release3)
 
-In my case, unless Token2 releases a new firmware with an update for the OpenPGP java applet on the T2F2 card, [I cannot use Curve 25519](https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards) for my key and will need to choose one that is compatible but still secure.  The PIN+ Dual firmware includes an OpenPGP java applet that [does support Curve 25519 (ed25519 / cv25519)](https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards).  Curve 25519 is prefered (where possible) as the key size is smaller while still being more secure than others, and it is fast.
+In the case of my T2F2 card, the OpenPGP java applet in the card's firmware [does not support Curve 25519](https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards) for the key and I will need to choose one that is compatible but still secure.  The PIN+ Dual firmware includes an OpenPGP java applet that [does support Curve 25519 (ed25519 / cv25519)](https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards).  Curve 25519 is prefered (where possible) as the key size is smaller while still being more secure than others, and it is fast.  To ensure the security of the device, [Token2 FIDO2 keys and cards have non-upgradeable firmware](https://www.token2.com/site/page/fido2-security-keys-faq#firmware-upgrade).  Other vendors may be the same - choose what will meet your needs carefully.
 
->I do have to say, the T2F2 card is still a very cost effective solution despite the lack of Curve 25519 support and the credit card form factor is quite convenient.  It still supports `RSA2048` which is very common, as well as NIST `P-256` (secp256r1), `P-384` (secp384r1) and `P-521` (secp521r1) elliptic curve algorithms.  It does however require an NFC or SmartCard reader equiped device to be used.
+>I do have to say, the T2F2 card is still a very cost effective solution despite the lack of Curve 25519 support and the credit card form factor is quite convenient.  It still supports `RSA2048` which is very common, as well as NIST `P-256` (secp256r1), `P-384` (secp384r1) and `P-521` (secp521r1) elliptic curve algorithms.  It does however require an NFC or SmartCard reader equiped device to be used.  
+
+I'm also planning to get hold of a Yubikey 5C NFC at some point seeing as Yubikey devices tend to be more common (but expensive), so I'll include some information on that in the future.
 
 </br>
 
@@ -173,3 +175,12 @@ https://dev.to/govindup63/gpg-for-noobs-17od
 
 OpenPGP cryptographic algorithms for Token2 devices:  
 https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards
+
+Token2 PIN+ Dual Release3.2 - FIDO2.1 Key with OpenPGP and OTP and Dual USB Ports:  
+https://www.token2.com/shop/product/pin-dual-release3-fido2-1-key-with-openpgp-and-otp-and-dual-usb-ports
+
+Token2 T2F2-NFC-Card PIN+ Release3:  
+https://www.token2.com/shop/product/t2f2-nfc-card-pin-release3
+
+Yubikey 5C NFC:
+https://www.yubico.com/nz/product/yubikey-5c-nfc/
