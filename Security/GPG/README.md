@@ -150,7 +150,7 @@ The wizard is the same as `--full-generate-key` and once you've created your `si
 I have the following devices made by Token2 (I am not affiliated):
 
 - [PIN+ Dual Release3.2 - FIDO2.1 Key with OpenPGP and OTP and Dual USB Ports](https://www.token2.com/shop/product/pin-dual-release3-fido2-1-key-with-openpgp-and-otp-and-dual-usb-ports)
-- [T2F2-NFC-Card PIN+ Release3](https://www.token2.com/shop/product/pin-dual-release3-fido2-1-key-with-openpgp-and-otp-and-dual-usb-ports)
+- [T2F2-NFC-Card PIN+ Release3](https://www.token2.com/shop/product/t2f2-nfc-card-pin-release3)
 
 In my case, unless Token2 releases a new firmware with an update for the OpenPGP java applet on the T2F2 card, [I cannot use Curve 25519](https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards) for my key and will need to choose one that is compatible but still secure.  The PIN+ Dual firmware includes an OpenPGP java applet that [does support Curve 25519 (ed25519 / cv25519)](https://www.token2.com/site/page/openpgp-setup-guide-for-usb-keys-and-cards).  Curve 25519 is prefered (where possible) as the key size is smaller while still being more secure than others, and it is fast.
 
