@@ -21,6 +21,7 @@ Wish me luck!
 
 - Security
   - [Setting up a private Root CA](Security/Private%20Root%20CA/README.md)  
+  - [Beginners Guide to GnuPG](Security/GPG/README.md)
   
 - General IT Articles
   - Maybe, maybe not....
