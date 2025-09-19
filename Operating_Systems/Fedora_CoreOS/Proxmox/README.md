@@ -123,5 +123,5 @@ Haven't tested yet:
 </br>
 
 ## References
-https://docs.fedoraproject.org/en-US/fedora-coreos/provisioning-proxmoxve/
+https://docs.fedoraproject.org/en-US/fedora-coreos/provisioning-proxmoxve/  
 https://coreos.github.io/butane/config-fcos-v1_6/
