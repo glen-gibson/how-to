@@ -12,16 +12,16 @@
 - [References](#references)
 </br>
 
-## Introduction
-This is going to be a little rough, just so I get it out there, then I can tidy it up a bit...
+## Introduction  
+Most homelab-ers will know about [Proxmox VE](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) an excellent Debian based distribution that makes it very easy create and manage virtual machines & LXC containers.  
 
-Most homelab-ers will know about [Proxmox VE](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) and how awesome of a distro it is for running up and managing VM's & LXC containers.  This guide will assume a decent level of understanding in how to use Proxmox.
+_This guide will assume a decent level of understanding of how to use Proxmox as this is not a Proxmox how-to guide._  
 
 ## Doesn't Fedora CoreOS use Ignition instead of Cloud-Init?
 It sure does, but read on if you want to find out how to kind of trick Proxmox into pushing through settings via both Ignition and Cloud-Init based information.
 
 ## Proxmox Prep-work
-SSH into your Proxmox server and create a directory to keep our Fedora CoreOS files in.
+SSH into the Proxmox VE host server and create a directory to keep the Fedora CoreOS files in.
 ```bash
 # Create directories for our items
 mkdir -p /var/coreos/images
@@ -31,9 +31,9 @@ mkdir -p /var/coreos/snippets
 pvesm add dir coreos --path /var/coreos --content images,snippets
 ```
 
-Next we need to download a Fedora CoreOS disk image for Proxmox, fortunately they supply one over at [https://fedoraproject.org/coreos/download/].
+Next we need to download a Fedora CoreOS disk image for Proxmox, fortunately they supply on specifically designed for Proxmox over at [https://fedoraproject.org/coreos/download/].
 
-Here's an example of grabbing the current stable release at the time of writing and decompressing it:
+Here's an example of downloading and decompressing the current stable release at the time of writing:
 ```bash
 # Change directory to where we'll keep our downloaded images
 cd /var/coreos/images
@@ -48,12 +48,15 @@ unxz fedora-coreos-42.20250901.3.0-proxmoxve.x86_64.qcow2.xz
 ## The Template Machine
 
 ### Hardware
-I tend accept most defaults except for using `OVMF (UEFI)` instead of `SeaBIOS` and `q35` instead of `i440fx` for the Virtual Machine I'm building.  Run through the remainder of the wizard, but __delete the default hard disk, don't add a new one__.  You'll see why soon.  Make a note of the VMID - the first default number is usually 100.  For templates, I like to assign the number 900 for the first, 901 for the second, etc.  So let's use __900 for this example__.
+Personally, I tend accept most defaults except for using `OVMF (UEFI)` instead of `SeaBIOS` and `q35` instead of `i440fx` for the virtual machines I build.  Run through the remainder of the wizard, but __delete the default hard disk and don't add a new one__.  You'll see why soon; Make a note of the VMID - the first default number is usually 100.  For templates, I like to assign the number 900 for the first, 901 for the second, etc.  I use 100 onwards for real virtual machines.  
+
+So, let's use 900 for this example.
 
 ### The Ignition File
 I'm not going to go into too much detail on Butane and Ignition.  Basically Butane files are easier for humans to read and edit as they're YAML, Ignition files are JSON.  Butane converts the YAML file into an Ignition JSON file that is usable by Fedora CoreOS.
 
 A minimal Fedora CoreOS butane file can be found [here](./config.bu).  
+
 Butane documentation for the spec at time of writing can be found here [https://coreos.github.io/butane/config-fcos-v1_6/]
 
 The command to do this is:
