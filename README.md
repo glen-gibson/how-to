@@ -10,17 +10,19 @@ Wish me luck!
 ## So far we have....
 
 - Operating Systems
-  - Cayo
-    - [Installation](Operating_Systems/Cayo/Installation/README.md)
-    - [Cayo Proxmox Template with Cloud-Init!](Operating_Systems/Cayo/Installation/Proxmox/README.md)
-  - Fedora CoreOS
-    - [Installation](Operating_Systems/Fedora_CoreOS/Installation/README.md)
+  - Fedora CoreOS  
+    - [Installation](Operating_Systems/Fedora_CoreOS/Installation/README.md)  
+    - [Proxmox with Ignition and Cloud-Init](Operating_Systems/Fedora_CoreOS/Proxmox/README.md)  
 
-- Infrastructure as Code
-  - To be added....
+  - Cayo  
+    - [Installation](Operating_Systems/Cayo/Installation/README.md)  
+    - [Cayo Proxmox Template with Cloud-Init!](Operating_Systems/Cayo/Installation/Proxmox/README.md)  
 
-- Security
+- Infrastructure as Code  
+  - To be added....  
+
+- Security  
   - [Setting up a private Root CA](Security/Private%20Root%20CA/README.md)  
   
-- General IT Articles
-  - Maybe, maybe not....
+- General IT Articles  
+  - Maybe, maybe not....  
